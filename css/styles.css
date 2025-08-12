@@ -501,7 +501,6 @@ button {
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
 }
 .backdrop.is-open {
   opacity: 1;
@@ -520,6 +519,7 @@ button {
   border-radius: 4px;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px; 
 }
 .backdrop:not(.is-open) .modal {
   transform: translate(-50%, -100%);
@@ -562,6 +562,9 @@ button {
   color: #2e2f42;
   margin-bottom: 16px;
   margin-top: 72px;
+}
+.review-popup-wraper {
+  margin-bottom: 8px;
 }
 .label-popup-wraper {
   display: block;
@@ -660,7 +663,7 @@ button {
   fill: #f4f4fd;
 }
 .p-link {
-  color: #4d5ae5;
+color: #4d5ae5;
 }
 .bth-cheket {
   display: block;
