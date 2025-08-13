@@ -500,7 +500,8 @@ button {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-open {
   opacity: 1;
@@ -519,16 +520,16 @@ button {
   border-radius: 4px;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px; 
+  padding: 72px 24px 24px 24px;
 }
 .backdrop:not(.is-open) .modal {
   transform: translate(-50%, -100%);
 }
 .review-popup-close-btn {
+  position: absolute;
   border-radius: 50%;
   width: 24px;
   height: 24px;
-  position: absolute;
   top: 24px;
   right: 24px;
   display: flex;
@@ -538,8 +539,8 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .review-popup-close-btn:hover,
 .review-popup-close-btn:focus {
@@ -561,28 +562,21 @@ button {
   text-align: center;
   color: #2e2f42;
   margin-bottom: 16px;
-  margin-top: 72px;
 }
 .review-popup-wraper {
   margin-bottom: 8px;
 }
 .label-popup-wraper {
   display: block;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 4px;
 }
 .input-popup-wraper {
   width: 100%;
   height: 40px;
-  margin-left: 24px;
-  margin-right: 24px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
@@ -601,11 +595,10 @@ button {
 }
 .class-name-icon {
   position: absolute;
-  left: 40px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  left: 16px
 }
 .input-popup-wraper:focus + .class-name-icon {
   fill: #4d5ae5;
@@ -615,7 +608,6 @@ button {
   border-radius: 4px;
   width: 100%;
   height: 120px;
-  margin-left: 24px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -648,7 +640,6 @@ button {
   width: 16px;
   height: 16px;
   margin-right: 8px;
-  margin-left: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -663,14 +654,13 @@ button {
   fill: #f4f4fd;
 }
 .p-link {
-color: #4d5ae5;
+  color: #4d5ae5;
 }
 .bth-cheket {
   display: block;
   min-width: 169px;
   height: 56px;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
@@ -679,6 +669,5 @@ color: #4d5ae5;
   background-color: #4d5ae5;
   border: none;
   margin: 0 auto;
-  margin-bottom: 24px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
