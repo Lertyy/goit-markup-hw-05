@@ -591,7 +591,6 @@ button {
 }
 .div-container-form {
   position: relative;
-  margin-bottom: 16px;
 }
 .class-name-icon {
   position: absolute;
@@ -618,6 +617,9 @@ button {
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.textarea-popup::placeholder {
+  color: rgba(46, 47, 66, 0.4);
 }
 .textarea-popup:focus {
   border-color: #4d5ae5;
@@ -654,7 +656,7 @@ button {
   fill: #f4f4fd;
 }
 .pp-link {
- color: #4d5ae5;
+  color: #4d5ae5;
 }
 .bth-cheket {
   display: block;
@@ -669,5 +671,6 @@ button {
   background-color: #4d5ae5;
   border: none;
   margin: 0 auto;
+  border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
